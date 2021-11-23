@@ -271,7 +271,7 @@ body {
 
 .main__content {
     margin: auto;
-    width: 50%;
+    width: 80%;
     padding: 20px;
 }
 
@@ -299,4 +299,19 @@ body {
 
 ul li:hover {
     text-decoration: underline;
+}
+
+.traloicauhoi {
+	max-width: 80rem;
+	margin: 0 auto;
+	width: 77%;
+	padding : 0 24px;
+}
+
+.cauhoi-item {
+	background-color: #161922;
+	margin-bottom: 16px;
+	border-radius: 8px;
+	padding: 1rem;
+	box-shadow: 8px 2px 8px #161922;
 }
