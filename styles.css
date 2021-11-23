@@ -290,7 +290,7 @@ body {
 
 .copyright {
     position: absolute;
-    bottom: -30%;
+    bottom: -59%;
     left: 50%;
     text-align: center;
     color: #fff;
@@ -301,17 +301,147 @@ ul li:hover {
     text-decoration: underline;
 }
 
-.traloicauhoi {
+/*.traloicauhoi {
 	max-width: 80rem;
 	margin: 0 auto;
 	width: 77%;
 	padding : 0 24px;
 }
-
+.cauhoi-title h2{
+	font-size: 8rem;
+}
 .cauhoi-item {
 	background-color: #161922;
 	margin-bottom: 16px;
 	border-radius: 8px;
 	padding: 1rem;
 	box-shadow: 8px 2px 8px #161922;
+}
+
+.cauhoi-link {
+	display: flex;
+	color: #000000;
+	width: 77%;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #161922;
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+.cauhoi-link .ion-md-remove {
+	display: none;
+}
+
+.traloi {
+	overflow: hidden;
+	max-height: 0;
+	position: relative;
+	background-color: #161922;
+	tranform: max-height 0.5s; 
+}
+
+.traloi::before {
+	position: absolute;
+	height: 90%;
+	background-color: #161922;
+	content: " ";
+	top: 50%;
+	left: 0;
+	transition: translateY(-50%);
+	width: 8px;
+}
+
+.traloi p {
+	color: #ffffff;
+	font-size: 20px;
+	padding: 2rem;
+}
+
+.traloi-item:target .traloi-item{
+	max-height: 20rem;
+}*/
+
+.section {
+	font-family: "M-Plus-1"; 
+	background-color: #161922;
+}
+
+h1{
+	font-size: 3rem;
+	height: 100px;
+	text-align: center;
+}
+
+.traloicauhoi {
+  width: 82%;
+  margin: 90px auto;
+  color: white;
+  background-color: #161922;
+  padding: 45px 45px;
+}
+
+.traloicauhoi .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.traloicauhoi .hoi {
+  position: relative;
+  padding: 10px 0;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.traloicauhoi .hoi::before {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.traloicauhoi .traloi1 {
+  position: relative;
+  background: #161922;
+  height: 0;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+  border-bottom: 4px solid #10161f;
+}
+
+.traloicauhoi .traloi2 {
+  position: relative;
+  background: #161922;
+  height: 0;
+  font-size: 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+  border-bottom: 4px solid #10161f;
+}
+
+.traloicauhoi hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+  color: #000000;
+}
+
+.traloicauhoi .container.active .traloi1 {
+  height: 90px;
+}
+
+.traloicauhoi .container.active .traloi2 {
+  height: 35px;
+}
+
+.traloicauhoi .container.active .hoi::before {
+  font-size: 30px;
 }
